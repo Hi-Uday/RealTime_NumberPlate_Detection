@@ -8,5 +8,5 @@ cap.set(10,100)  # id 10 is for brightness
 while True:
     success, img=cap.read()
     cv2.imshow("Webcam",cv2.cvtColor(img,cv2.COLOR_BGR2GRAY))
-    if cv2.waitKey(1) & 0xff ==ord('q'):
+    if cv2.waitKey(1) & 0xff ==ord('q'):        # ord is for exit while we type q key 
         break
